@@ -35,6 +35,7 @@ module Lecture1
 its behaviour, possible types for the function arguments and write the
 type signature explicitly.
 -}
+makeSnippet:: Int -> String -> String
 makeSnippet limit text = take limit ("Description: " ++ text) ++ "..."
 
 {- | Implement a function that takes two numbers and finds sum of
@@ -51,7 +52,7 @@ is 25.
 -}
 -- DON'T FORGET TO SPECIFY THE TYPE IN HERE
 sumOfSquares :: Int -> Int -> Int
-sumOfSquares x y = error "TODO!"
+sumOfSquares x y = x*x + y*y
 
 {- | Implement a function that returns the last digit of a given number.
 
